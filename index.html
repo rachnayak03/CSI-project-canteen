@@ -1,960 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!----local stylesheet----->
+    <link rel="stylesheet" href="canteen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js" >
+    
+    
+    <!------boxicon link-------->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' rel='stylesheet'>
 
-  </head>
 
-  <body>
+   
+    
+
+    <title>Shri Durga</title>
+     <!----Owl carousel style links----->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+</head>
+<body>
     <header>
-      <nav id="navbar" class="navbar flex-row">
-          <div class="nav-icon menu-btn-wrapper">
-              <div id="menu-btn" class="menu-btn bx bx-menu"></div>
-          </div>
-  
-          <div class="logo">
-              <h5>Shri Durga</h5>
-          </div>
-  
-          <ul id="nav-items" class="nav-items">
-              <li><a href="canteen.html" class="nav-links">HOME</a></li>
-              
-          </ul>
-  
-           
+
+        <!-------------- PreNav Text Start-------------->
+
+        <div id="prenav-text">
+            
+        </div>
+
+        <!-------------- PreNav Text End-------------->
+
+
+        <!-------------- Navbar Start-------------->
+
+        <nav id="navbar" class="navbar flex-row">
+            <div class="nav-icon menu-btn-wrapper">
+                <div id="menu-btn" class="menu-btn bx bx-menu"></div>
+            </div>
+
+            <div class="logo">
+                <h5>Shri Durga</h5>
+            </div>
+
+            <ul id="nav-items" class="nav-items">
+                <li><a href="#home" class="nav-links">HOME</a></li>
+                <li><a href="#menu" class="nav-links">MENU</a></li>
+                <li><a href="#about" class="nav-links">ABOUT</a></li>
+                <li><a href="#review" class="nav-links">REVIEWS</a></li>
+                <li><a href="signup.html" class="nav-links">SIGNUP</a></li>
+            </ul>
+
+            <ul class="nav-btns">
+                <div class="search-btn-wrapper nav-icon">
+                    <i class="searchbtn bx bx-search-alt-2"></i>
+                    <div id="search-form" class="search-form">
+                        <form action="#">
+                            <input type="search" class="search-data" placeholder="Search" required>
+                            <button type="submit" class="bx bx-search-alt-2"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="cart-btn-wrapper nav-icon">
+                    <i class="cartbtn bx bx-cart"></i>
+                    <div id="cart" class="cart flex-row">
+                        <span>No product in Cart</span>
+                    </div>
+
+                </div>
                 <div class=" nav-icon">
                     <i class="darkbtn bx bx-moon"></i>
                 </div>
-            
-  
-      </nav>
-  
-      <!-------------- Navbar End-------------->
-  </header>
-    <section id="home2">
-    
-      <div class="slide">
-          
-              
-                  <form action="" class="search">
-                      <input type="text" placeholder="Search for a food item" name="u">
-                      <button type="submit"><img src="searchimg.png"></button>
-                  </form>
-              
-          
-      </div>
-     
-  
-</section>
-    <section id="tranding">
-      <div class="section-heading">
-        <h3 class="text-center">Menu</h3>
-        <h1 class="text-center">Most loved ones</h1>
+            </ul>
+
+
+
+        </nav>
+
+        <!-------------- Navbar End-------------->
+    </header>
+    <!-------------- Home Section Start-------------->
+
+    <section id="home">
+        <div class=" owl-carousel owl-theme">
+            <div class="slide slide1">
+                <div class="content">
+                    <p class="sub-head">SHRI DURGA CANTEEN</p>
+                    <h1 class="heading">High Quality</h1>
+                    <p class="sub-head-2">food</p>
+                </div>
+            </div>
+            <div class=" slide slide2">
+                <div class="content">
+                    <p class="sub-head">SHRI DURGA CANTEEN</p>
+                    <h1 class="heading">Trusted by</h1>
+                    <p class="sub-head-2">students</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-----Menu section-------->
+
+    <section id="menu" class="menu">
+        
+        <div class="section-heading">
+        <h3>Menu Section </h3>
+        <h1>A taste of home</h1>
         <div class="squarewrapper flex-row">
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
         </div>
     </div>
-      <div class="container">
-        <div class="swiper tranding-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="img31.avif" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="food-price">$20</h1>
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Special Pizza
-                  </h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="img32.avif" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="food-price">$20</h1>
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Meat Ball
-                  </h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="img33.avif" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="food-price">$40</h1>
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Burger
-                  </h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="img34.avif" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="food-price">$15</h1>
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Frish Curry
-                  </h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="img35.avif" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="food-price">$15</h1>
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Pane Cake
-                  </h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-              <div class="tranding-slide-img">
-                <img src="img36.avif" alt="Tranding">
-              </div>
-              <div class="tranding-slide-content">
-                <h1 class="food-price">$20</h1>
-                <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">
-                    Vanilla cake
-                  </h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <!-- Slide-end -->
-            
-          </div>
-
-          <div class="tranding-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
+    <div class="box-container">
+    <div class="box">
+        <div class="image">
+            <img src="juice1.avif" alt="">
+            <a href="#" class="fas fa-heart"></a>
         </div>
-      </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Juices</h3>
+            <p id="para">"Quench your thirst and satisfy your cravings with our Juice and Milkshake Marvels, where every sip is a delicious adventure waiting to be explored."
+            </p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.26</span>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="image">
+            <img src="chats.jpg" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Chats</h3>
+            <p id="para">"Get ready to chat, savor, and share the joy with our delectable range of chitchat-worthy dishes, each bite sparking lively conversations."</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.20</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="southindian.avif" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+            </div>
+            <h3>South-Indian</h3>
+            <p id="para">"Embark on a flavor-packed journey to the heart of South India, where every dish is a harmonious blend of spices, tradition, and a dash of Southern soul."</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.21</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="snacks1.avif" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Snacks</h3>
+            <p id="para">"Indulge in a world of savory sensations with our snacks section, where every bite is a delightful escape from the ordinary."</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.16</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="dosa1.jpg" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Dosa</h3>
+            <p id="para">"Savor the South's finest with our Dosa Delights, where crispy, golden perfection meets a symphony of flavors, one delectable bite at a time."</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.26</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="sweet.avif" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Sweets</h3>
+            <p id="para">"Indulge your sweet tooth with our Divine Desserts, where every delectable creation is a sweet symphony for your taste buds."</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.16</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="icecream1.avif" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Icecreams</h3>
+            <p id="para">"Beat the heat with our Ice Cream Extravaganza, where scoops of happiness and swirls of delight await to sweeten your day!"</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.55</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="gravy1.jpg" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Gravys</h3>
+            <p id="para">"Delve into a sea of sumptuous Indian gravies, where each dish is a culinary masterpiece that will have your taste buds dancing with delight."</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.80</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+            <img src="chinese.avif" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star"></i>
+                <i class=" fas fa-star-half-alt"></i>
+                
+
+                
+            </div>
+            <h3>Chinese</h3>
+            <p id="para">"Discover the fast and flavorful side of the Far East with our Chinese Fast Food Fiesta, where speed meets sizzle in every bite!"</p>
+            <a href="menu.html" class="btn">Explore</a>
+            <span class="price">Starts from Rs.63</span>
+        </div>
+    </div>
+    
+    
+</div>
+<div class="btn-wrapper">
+    <a href="menu.html" class="btn">View Complete Menu</a>
+</div>
     </section>
-    <section id="menu-view" class="menu-view">
+
+    <section id="review" class="review">
         <div class="section-heading">
-          <h3 class="text-center">Menu</h3>
-          <h1 class="text-center">Our Complete Menu</h1>
-          <div class="squarewrapper flex-row">
-              <div class="square"></div>
-              <div class="square"></div>
-              <div class="square"></div>
-          </div>
-      </div>
-      <div class="menu-container" >
-        <div class="item">
-         <div class="item-name">
-            <h2>Juices</h2>
-          </div>
-          <div class="box-container">
-            <div class="box">
-              <h3>Lime Juice</h3>
-              <span class="dots"></span>
-              <h3>Rs 26</h3>
-            </div>
-            <div class="box">
-              <h3>Cold Coffee</h3>
-              <span class="dots"></span>
-              <h3>Rs 42</h3>
-            </div>
-            <div class="box">
-              <h3>Water Melon</h3>
-              <span class="dots"></span>
-              <h3>Rs 47</h3>
-            </div>
-            <div class="box">
-              <h3>Pineapple</h3>
-              <span class="dots"></span>
-              <h3>Rs 47</h3>
-            </div>
-            <div class="box">
-              <h3>Musumbi</h3>
-              <span class="dots"></span>
-              <h3>Rs 47</h3>
-            </div>
-            <div class="box">
-              <h3>Orange Juice</h3>
-              <span class="dots"></span>
-              <h3>Rs 47</h3>
-            </div>
-            <div class="box">
-              <h3>Fruit Punch</h3>
-              <span class="dots"></span>
-              <h3>Rs 60</h3>
+            <h3>Testimonials</h3>
+            <h1>What Students Say</h1>
+            <div class="squarewrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
             </div>
         </div>
-      </div>
+        <div class="Cards">
+            <!--<div class="card">
+                <img src="img10.jpeg">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, nostrum labore? Ipsum in molestias deserunt laboriosam beatae, ducimus perferendis quam laudantium, nulla quibusdam eum quisquam sint vel, voluptas neque delectus!</p>
+                <h3>Riya Dsa</h3>
+                <h4>3rd year student</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>-->
 
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Chats</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Vada Paav</h3>
-             <span class="dots"></span>
-             <h3>Rs 20</h3>
-           </div>
-           <div class="box">
-             <h3>Sev Puri</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Papdi Chat</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Bhel Puri</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Charmuri</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Pani Puri</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-            <h3>Samosa Chat</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Misaal Paav</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Dahi Puri</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>DahiSev Puri</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Dahipapdi Chat</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-       </div>
-     </div>
+            <div class="card">
+                <img src="STUDENT1.jpg">
+                <p>I recently had the pleasure of indulging in a plate of veg pulao ,and I must say it was an absolute delight for the senses and also left a lasting impression. </p>
+                <h3>Pranitha P Shetty</h3>
+                <h5>3rd year student</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
 
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Chinese</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Veg Fried Rice</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Veg Noodles</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Paneer Fried Rice</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Ghee Rice</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Jeera Rice</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Veg Rice Manchurian</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Gobi Manchurian</h3>
-             <span class="dots"></span>
-             <h3>Rs 60</h3>
-           </div>
-           <div class="box">
-            <h3>Mashroom Fried Rice</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Gobi Manchurian</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Tripple Fried Rice</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Veg Biryani</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Mushroom Manchurian</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Paneer Manchurian</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-       </div>
-     </div>
+            <div class="card">
+                <img src="STUDENT3.jpg">
+                <p>I recently had the pleasure of savoring a serving of Paneer Butter Masala, and the experience was nothing short of a culinary masterpiece.</p>
+                <h3>Riya Dsa</h3>
+                <h5>3rd year student</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
 
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Snacks</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Buns</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Biscuit Rotti</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Veg Bonda</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Alu Bonda</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Chattambade</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Goli Baje</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Podi</h3>
-             <span class="dots"></span>
-             <h3>Rs 60</h3>
-           </div>
-           <div class="box">
-            <h3>Mirchi Podi</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Buns</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Biscuit Rotti</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Sanjeera</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Veg Bonda</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Alu Bonda</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Chattambade</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Onion Pakoda</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-       </div>
-     </div>
+            <div class="card">
+                <img src="Student2.jpg">
+                <p>I recently treated myself to a masala dosa it was tasty and considering the portion size and the quality, the masala dosa offered good value for money. </p>
+                <h3>Sinchana C Poojary</h4>
+                <h5>3rd year student</h4>
+                <i class="fa fa-quote-left"></i>
+            </div>
 
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Gravys</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Paneer Butter Masala</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Paneer Tikka Masala</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Paneer Chingari</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Paneer Burgi</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Paneer Kohlapuri</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Shahi Paneer</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-            <h3>Paneer Navaratna Kurma</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Mushroom Makhanwala</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>2 Paratha + Any Gravy</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Extra Paratha</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-       </div>
-     </div>
-
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Milk Shakes</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Oreo</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Chocolate</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Chikku</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Musk Melon</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Pista</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Strawberry</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Mango</h3>
-             <span class="dots"></span>
-             <h3>Rs 60</h3>
-           </div>
-           <div class="box">
-            <h3>Vanilla</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-       </div>
-     </div>
-
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>South-Indian Snacks</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Idli Sambar(2 idli)</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Vada Sambar(1 vada)</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Ambade Sambar(1 no.)</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Dahi Vada(1 vada)</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Moong Avalakki</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Kadle Avalakki</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Upma Avalakki</h3>
-             <span class="dots"></span>
-             <h3>Rs 60</h3>
-           </div>
-           <div class="box">
-            <h3>Idli Sambar(3 idli)</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-           <div class="box">
-            <h3>Idli Vada(single)</h3>
-            <span class="dots"></span>
-            <h3>Rs 60</h3>
-          </div>
-          <div class="box">
-            <h3>Chapathi Kurma</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Pav Bhaji(2 paav) extra paav Rs.5</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Puri Bhaji</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Pundi Gassi</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Aloo Paratha</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Vada Sambar(2 vada)</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Pav Bhaji(3 paav)</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Parota Kurma(2no.)*extra paratha</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Samosa</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Cutlet</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Ambade Sambar(2 no.)</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Dahi Vada(2 vada)</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Chole Bhature</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-       </div>
-     </div>
-
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Dosa</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Plain Dosa</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Uddina Dosa</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Neer Dosa</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Masala Dosa</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-       </div>
-     </div>
-
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Special Dosa</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Mysuru Masala</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Paneer Masala</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Palak Masala</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-            <h3>Mushroom Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Open Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 42</h3>
-          </div>
-          <div class="box">
-            <h3>Rava Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Spring Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Onion Rava Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 42</h3>
-          </div>
-          <div class="box">
-            <h3>Onion Uttappa</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Tomato Onion Uttappa</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Paneer Uttappa</h3>
-            <span class="dots"></span>
-            <h3>Rs 42</h3>
-          </div>
-          <div class="box">
-            <h3>Tomato Omlete</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Garlic Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Schezwan Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 42</h3>
-          </div>
-          <div class="box">
-            <h3>Palak Paneer</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-          <div class="box">
-            <h3>Mysuru Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 26</h3>
-          </div>
-          <div class="box">
-            <h3>Paneer Masala</h3>
-            <span class="dots"></span>
-            <h3>Rs 42</h3>
-          </div>
-          <div class="box">
-            <h3>Set Dosa</h3>
-            <span class="dots"></span>
-            <h3>Rs 47</h3>
-          </div>
-       </div>
-     </div>
-
-      <!---new---->
-      <div class="item">
-        <div class="item-name">
-           <h2>Ice Cream</h2>
-         </div>
-         <div class="box-container">
-           <div class="box">
-             <h3>Vanilla Sunday</h3>
-             <span class="dots"></span>
-             <h3>Rs 26</h3>
-           </div>
-           <div class="box">
-             <h3>Fruit Salad</h3>
-             <span class="dots"></span>
-             <h3>Rs 42</h3>
-           </div>
-           <div class="box">
-             <h3>Chocolate Sunday</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Mix Sunday</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Fruit Salad with Ice-cream</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           <div class="box">
-             <h3>Gudbud</h3>
-             <span class="dots"></span>
-             <h3>Rs 47</h3>
-           </div>
-           
-       </div>
-     </div>
-     <!---new---->
-     <div class="item">
-      <div class="item-name">
-         <h2>Sweets</h2>
-       </div>
-       <div class="box-container">
-         <div class="box">
-           <h3>Gulaab Jaamun(1no.)</h3>
-           <span class="dots"></span>
-           <h3>Rs 26</h3>
-         </div>
-         <div class="box">
-           <h3>Gulaab Jaamun(2no.)</h3>
-           <span class="dots"></span>
-           <h3>Rs 42</h3>
-         </div>
-         <div class="box">
-           <h3>Sheera</h3>
-           <span class="dots"></span>
-           <h3>Rs 47</h3>
-         </div>
-     </div>
-   </div>
-
-   <div class="item">
-    <div class="item-name">
-       <h2>Meals</h2>
-     </div>
-     <div class="box-container">
-       <div class="box">
-         <h3>Meal & Pulao</h3>
-         <span class="dots"></span>
-         <h3>Rs 26</h3>
-       </div>
-       <div class="box">
-         <h3>Veg Pulao</h3>
-         <span class="dots"></span>
-         <h3>Rs 42</h3>
-       </div>
-       <div class="box">
-         <h3>Meal</h3>
-         <span class="dots"></span>
-         <h3>Rs 47</h3>
-       </div>
-   </div>
- </div>
-      </div>
+            
+        </div>
     </section>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <section id="blog" class="blog">
+        <div class="section-heading">
+            <h3>Today's Special</h3>
+            <h1>Count memories not calories</h1>
+            <div class="squarewrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+        <div class="cardcontainer">
+            <div class="mycard">
+                <div class="cimg">
+                    <img src="mushroommunchurian.avif">
+                </div>
+                <div class="cdetail">
+                    <h2>Mushroom Munchurian</h2>
+                  <p>"Indulge your senses in the extraordinary with our special dish"</p>  
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="cimg">
+                    <img src="palakpaneer.avif">
+                </div>
+                <div class="cdetail">
+                    <h2>Palak Paneer</h2>
+                  <p>"Indulge your senses in the extraordinary with our special dish"</p>  
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="cimg">
+                    <img src="parothakurma.avif">
+                </div>
+                <div class="cdetail">
+                    <h2>Parotha Kurma</h2>
+                  <p>"Indulge your senses in the extraordinary with our special dish"</p>  
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="cimg">
+                    <img src="gulaabjamun.avif">
+                </div>
+                <div class="cdetail">
+                    <h2>Gulaab Jamun</h2>
+                  <p>"Indulge your senses in the extraordinary with our special dish"</p>  
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="cimg">
+                    <img src="oreomilkshake.avif">
+                </div>
+                <div class="cdetail">
+                    <h2>Oreo Milkshake</h2>
+                  <p>"Indulge your senses in the extraordinary with our special dish"</p>  
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="cimg">
+                    <img src="vegnoodles.avif">
+                </div>
+                <div class="cdetail">
+                    <h2>Veg Noodles</h2>
+                  <p>"Indulge your senses in the extraordinary with our special dish"</p>  
+                </div>
+            </div>
+            
 
+          </div> 
+    </section>
+    
+
+    <!-------------- Home Section End-------------->
+    <!--------Jquery stle links------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <!--------Owl-carosel script------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+
+   
+     <!-------------- Local JS Script -------------->
+    <script src="canteen.js"></script>
+
+     
+     
+   
+     
+</body>
 </html>
